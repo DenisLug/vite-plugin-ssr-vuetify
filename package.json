@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "npm run server",
+    "prod": "npm run build && npm run server:prod",
+    "build": "vite build && vite build --ssr",
+    "server": "node ./server",
+    "server:prod": "cross-env NODE_ENV=production node ./server"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.2.2",
+    "@vue/compiler-sfc": "^3.2.31",
+    "@vue/server-renderer": "^3.2.31",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.3",
+    "sass": "^1.53.0",
+    "vite": "^2.8.4",
+    "vite-plugin-ssr": "0.3.64",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue": "^3.2.31",
+    "vue-cli-plugin-vuetify": "^2.5.1",
+    "vuetify": "^3.0.0-beta.5"
+  }
+}
